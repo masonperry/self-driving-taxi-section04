@@ -61,12 +61,12 @@ bool Car::check_distance(std::vector<int> pickup, std::vector<int> dropoff)
     return true;
 }
 
-bool Car::is_home() 
+bool Car::is_home()
 {
     return false;
 }
 
-bool Car::has_passengers() 
+bool Car::has_passengers()
 {
     return false;
 }
@@ -79,6 +79,7 @@ int Car::distance(double x1, double y1, double x2, double y2)
 
 Car &Car::go_home()
 {
+  destination.push({0,0});
     return *this;
 }
 
